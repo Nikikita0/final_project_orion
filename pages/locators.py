@@ -45,6 +45,6 @@ class MainPageLocators:
     PREV_GOODS = (By.XPATH, '//div[@class="tab-content"]//div[@class="owl-carousel owl-loaded owl-drag"]/div[@class="owl-nav"]/div[@class="owl-prev"]')
     NEXT_GOODS = (By.XPATH, '//div[@class="tab-content"]//div[@class="owl-carousel owl-loaded owl-drag"]/div[@class="owl-nav"]/div[@class="owl-next"]')
     PRODUCT_MAIN = (By.XPATH, '//a[contains(text(),"Арт.374")]//ancestor::div[@class="item product-thumb"]')
-
+    ADD_PRODUCT_TO_CART = (By.XPATH, '//a[contains(text(),"Арт.374")]//ancestor::div[@class="item product-thumb"]// button[ @class ="remarketing_cart_button"]')
     SALE_LABEL = (By.XPATH, "//span[text()='Акція']")
     DAY_OFFER_LABEL = (By.XPATH, "//span[text()='Пропозиція дня']")

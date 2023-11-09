@@ -158,6 +158,14 @@ class MainPage(base_page.BasePage):
             "The element is not present"
         print(f"{inspect.currentframe().f_code.co_name} - Ok")
 
+    def is_add_to_cart_product_2(self):
+        assert self.hover_action(*locators.MainPageLocators.PRODUCT_MAIN), \
+            "The element is not present"
+        assert self.is_element_present(*locators.MainPageLocators.ADD_PRODUCT_TO_CART), \
+            "The element is not present"
+        print(f"{inspect.currentframe().f_code.co_name} - Ok")
+
+
     def is_sale_label(self):
         assert self.is_element_present(*locators.MainPageLocators.SALE_LABEL), \
             "The element is not present"

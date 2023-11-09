@@ -52,6 +52,7 @@ class TestMainPage:
         page.is_show_next_product()
         page.is_show_prev_product()
         page.is_product_2()
+        page.is_add_to_cart_product_2()
         page.is_sale_label()
         page.is_day_offer_label()
 
