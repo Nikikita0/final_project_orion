@@ -3,6 +3,8 @@ from selenium.webdriver.common.by import By
 
 class BasePageLocators:
     CART = (By.XPATH, '//span[@class="cart-link"]')
+    GO_TO_CHECKOUT = (By.XPATH, '//button[@class="btn btn-primary btn-cartblock"]')
+
     FEEDBACK = (By.XPATH, '//div[@class="contact-num"]/a')
     SEARCH_FIELD = (By.XPATH, '//input[@id="ajax-search-text"]')
     SEARCH_BUTTON = (By.XPATH, '//button[@id="ajax-search-btn"]')
@@ -48,3 +50,78 @@ class MainPageLocators:
     ADD_PRODUCT_TO_CART = (By.XPATH, '//a[contains(text(),"Арт.374")]//ancestor::div[@class="item product-thumb"]// button[ @class ="remarketing_cart_button"]')
     SALE_LABEL = (By.XPATH, "//span[text()='Акція']")
     DAY_OFFER_LABEL = (By.XPATH, "//span[text()='Пропозиція дня']")
+
+
+class SignupPageLocators:
+    EMAIL_SIGNUP_FIELD = (By.XPATH, '//input[@id="register_email"]')
+    PASSWORD_SIGNUP_FIELD = (By.XPATH, '//input[@id="register_password"]')
+    CONFIRM_PASSWORD_FIELD = (By.XPATH, '//input[@id="register_confirm_password"]')
+    FIRST_NAME_SIGNUP_FIELD = (By.XPATH, '//input[@id="register_firstname"]')
+    PHONE_SIGNUP_FIELD = (By.XPATH, '//input[@id="register_telephone"]')
+    SELECT_REGION_MENU = (By.XPATH, '//select[@id="register_country_id"]')
+    REGION_OPTION = (By.XPATH, '//option[@value="300009"]')
+    SELECT_CITY_MENU = (By.XPATH, '//select[@id="register_zone_id"]')
+    CITY_OPTION = (By.XPATH, '//option[@value="200038"]')
+    SELECT_DEPARTMENT_MENU = (By.XPATH, '//select[@id="register_city"]')
+    DEPARTMENT_OPTION = (By.XPATH, '//option[@value="Відділення №3 (до 30 кг): вул. Леваневського, 47/1"]')
+    POSTCODE_FIELD = (By.XPATH, '//input[@id="register_postcode"]')
+    ADDRESS_FIELD = (By.XPATH, '//input[@id="register_address_1"]')
+    RADIO_BTN_NEWSLETTER_TRUE = (By.XPATH, '//input[@id="register_newsletter_1"]')
+    RADIO_BTN_NEWSLETTER_FALSE = (By.XPATH, '//input[@id="register_newsletter_0"]')
+    CONFIRM_BTN = (By.XPATH, '//a[@id="simpleregister_button_confirm"]')
+
+
+class LoginPageLocators:
+    EMAIL_FIELD = (By.XPATH, '//input[@id="input-email"]')
+    PASSWORD_FIELD = (By.XPATH, '//input[@id="input-password"]')
+    FORGOT_PASSWORD = (By.XPATH, '//a[text()="Забули пароль?"]')
+    SUBMIT_BTN = (By.XPATH, '//input[@class="btn btn-primary"]')
+    GO_TO_SIGNUP_BTN = (By.XPATH, '//a[@class="btn btn-primary"]')
+
+
+class CheckoutPageLocators:
+    ALREDY_REGISTRED = (By.XPATH, '//a[@data-onclick="openLoginBox"]')
+    EMAIL_IN_LOGIN_BOX = (By.XPATH, '//input[@data-onkeydown="detectEnterAndLogin"and @name="email"]')
+    PASSWORD_IN_LOGIN_BOX = (By.XPATH, '//input[@data-onkeydown="detectEnterAndLogin"and @name="password"]')
+    CONFIRM_IN_LOGIN_BOX = (By.XPATH, '//a[@id="simplecheckout_button_login"]')
+    FORGOT_PASSWORD_IN_LOGIN_BOX = (By.XPATH, '//a[text()="Забули пароль?"]')
+
+    DO_WITH_REGISTRATION = (By.XPATH, '//input[@id="customer_register_1"]')
+    DO_WITHOUT_REGISTRATION = (By.XPATH, '//input[@id="customer_register_0"]')
+
+    EMAIL_CHECKOUT_FIELD = (By.XPATH, '//input[@id="customer_email"]')
+    PASSWORD_CHECKOUT_FIELD = (By.XPATH, '//input[@id="customer_password"]')
+    CONFIRM_CHECKOUT_FIELD = (By.XPATH, '//input[@id="customer_confirm_password"]')
+    FIRST_NAME_CHECKOUT_FIELD = (By.XPATH, '//input[@id="shipping_address_firstname"]')
+    PHONE = (By.XPATH, '//input[@id="customer_telephone"]')
+    SELECT_REGION_MENU = (By.XPATH, '//select[@id="shipping_address_country_id"]')
+    REGION_OPTION = (By.XPATH, '//option[@value="300009"]')
+    SELECT_CITY_MENU = (By.XPATH, '//select[@id="shipping_address_zone_id"]')
+    CITY_OPTION = (By.XPATH, '//option[@value="200038"]')
+    SELECT_DEPARTMENT_MENU = (By.XPATH, '//select[@id="shipping_address_city"]')
+    DEPARTMENT_OPTION = (By.XPATH, '//option[@value="Відділення №3 (до 30 кг): вул. Леваневського, 47/1"]')
+
+    DELIVERY_TO_DEPARTMENT = (By.XPATH, '//input[@id="novaposhta.novaposhta"]')
+    COURIER_DELIVERY = (By.XPATH, '//input[@id="novaposhtacopy.novaposhtacopy"]')
+
+    CARD_PAY = (By.XPATH, '//input[@id="wayforpay"]')
+    PAY_ON_RECEIPT = (By.XPATH, '//input[@id="cod"]')
+
+    CALL_TO_CONFIRM_CHECKBOX = (By.XPATH, '//input[@id="payment_address_iscall"]')
+    CONFIRM_BUTTON = (By.XPATH, "//a[@id='simplecheckout_button_confirm']")
+
+
+class ForgotPasswordPageLocators:
+    EMAIL_FP_FIELD = (By.XPATH, '//input[id="input-email"]')
+    CONFIRM_FP_FIELD = (By.XPATH, '//input[@class="btn btn-primary"]')
+    SUCCESS_ALERT = (By.XPATH, '//div[@class="alert alert-success alert-dismissible"]')
+    DANGER_ALERT = (By.XPATH, '//div[@class="alert alert-danger alert-dismissible"]')
+
+
+
+
+
+
+
+
+
