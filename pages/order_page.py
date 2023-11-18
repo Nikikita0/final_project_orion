@@ -54,7 +54,13 @@ class OrderPage(base_page.BasePage):
             "Element is not present"
         assert self.is_element_present(*locators.CheckoutPageLocators.CONFIRM_BUTTON), \
             "Element is not present"
+        print(f"{inspect.currentframe().f_code.co_name} - Ok")
 
+    def check_qty(self,qty):
+        qty_actual = self.get_text(*locators.BasePageLocators.QTY).split(" ")
+        assert int(qty_actual[1]) == qty, \
+            "QTY doesn't match to actual"
+        print(f"{inspect.currentframe().f_code.co_name} - Ok")
 
 
 

@@ -35,6 +35,9 @@ class BasePageLocators:
 
     ALERT_SUCCESS = (By.XPATH, '//div[@class="col-xs-12 alert alert-success"]')
 
+    QTY = (By.XPATH, '//span[@class="cart-products-count hidden-sm hidden-xs"]')
+
+
 
 class MainPageLocators:
 

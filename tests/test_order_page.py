@@ -52,6 +52,7 @@ class TestOrderPage:
         page.explicit_wait(3)
         page.add_popular_product_to_cart()
         page.explicit_wait(3)
+        page.check_qty(qty=3)
         page.go_to_order()
 
     def test_make_order(self, browser):
