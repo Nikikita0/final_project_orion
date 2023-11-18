@@ -134,7 +134,7 @@ class MainPage(base_page.BasePage):
         print(f"{inspect.currentframe().f_code.co_name} - Ok")
 
     def is_switch_to_recommended_products(self):
-        assert self.is_element_present(*locators.MainPageLocators.RECOMENDED_GOODS), \
+        assert self.is_element_present(*locators.MainPageLocators.RECOMMENDED_GOODS), \
             "The element is not present"
         print(f"{inspect.currentframe().f_code.co_name} - Ok")
 

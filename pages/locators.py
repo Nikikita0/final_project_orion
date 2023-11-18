@@ -11,6 +11,10 @@ class BasePageLocators:
     LOGIN_SIGNUP_MENU = (By.XPATH, '//span[@class="expand-more"]')
     SIGNUP = (By.XPATH, '//a[@href="https://oriontoys.shop/index.php?route=account/simpleregister"]')
     LOGIN = (By.XPATH, '//a[@href="https://oriontoys.shop/index.php?route=account/login"]')
+
+    CABINET_MENU = (By.XPATH, '//div[@class="user-info"]')
+    LOGOUT_BTN = (By.XPATH, '//a[@href="https://oriontoys.shop/index.php?route=account/logout"]')
+
     WISHLIST = (By.XPATH, '//span[@class="wishlist-text"]')
     LANGUAGE_MENU = (By.XPATH, '//button[@class="btn btn-link dropdown-toggle"]')
     LANGUAGE_UKR = (By.XPATH, '//button[text()= " Українська"]')
@@ -29,6 +33,8 @@ class BasePageLocators:
     SITEMAP = (By.XPATH, '//a[@href="https://oriontoys.shop/index.php?route=information/sitemap"]')
     ACCOUNT = (By.XPATH, '//a[text()= "Аккаунт"]')
 
+    ALERT_SUCCESS = (By.XPATH, '//div[@class="col-xs-12 alert alert-success"]')
+
 
 class MainPageLocators:
 
@@ -42,7 +48,8 @@ class MainPageLocators:
     CAT_CARS_MAIN = (By.XPATH, '//a[@href="https://oriontoys.shop/mashynky-i-tekhnika/"]')
 
     POPULAR_GOODS = (By.XPATH, '//a[contains(@href,"#bestseller-products-block")]')
-    RECOMENDED_GOODS = (By.XPATH, '//a[contains(@href,"#featured-products-block")]')
+    POPULAR_PRODUCT = (By.XPATH, '//img[@src="https://oriontoys.shop/image/cache/catalog/productsimage/440_04-370x370.jpg"]')
+    RECOMMENDED_GOODS = (By.XPATH, '//a[contains(@href,"#featured-products-block")]')
     NEW_GOODS = (By.XPATH, '//a[contains(@href,"#new-products-block")]')
     PREV_GOODS = (By.XPATH, '//div[@class="tab-content"]//div[@class="owl-carousel owl-loaded owl-drag"]/div[@class="owl-nav"]/div[@class="owl-prev"]')
     NEXT_GOODS = (By.XPATH, '//div[@class="tab-content"]//div[@class="owl-carousel owl-loaded owl-drag"]/div[@class="owl-nav"]/div[@class="owl-next"]')
@@ -53,6 +60,8 @@ class MainPageLocators:
 
 
 class SignupPageLocators:
+    H1_SIGNUP = (By.XPATH, '//h1[text()="Швидка реєстрація"]')
+
     EMAIL_SIGNUP_FIELD = (By.XPATH, '//input[@id="register_email"]')
     PASSWORD_SIGNUP_FIELD = (By.XPATH, '//input[@id="register_password"]')
     CONFIRM_PASSWORD_FIELD = (By.XPATH, '//input[@id="register_confirm_password"]')
@@ -68,7 +77,9 @@ class SignupPageLocators:
     ADDRESS_FIELD = (By.XPATH, '//input[@id="register_address_1"]')
     RADIO_BTN_NEWSLETTER_TRUE = (By.XPATH, '//input[@id="register_newsletter_1"]')
     RADIO_BTN_NEWSLETTER_FALSE = (By.XPATH, '//input[@id="register_newsletter_0"]')
-    CONFIRM_BTN = (By.XPATH, '//a[@id="simpleregister_button_confirm"]')
+    CONFIRM_BTN = (By.XPATH, '//div[@class="simpleregister-button-right"]')
+    GO_TO_MAIN_PAGE = (By.XPATH, '//div[@id="logo"]/a[@href="https://oriontoys.shop/"]')
+    P_EXIT = (By.XPATH, '//p[text()="Ви вийшли з Особистого Кабінету."]')
 
 
 class LoginPageLocators:
@@ -77,6 +88,8 @@ class LoginPageLocators:
     FORGOT_PASSWORD = (By.XPATH, '//a[text()="Забули пароль?"]')
     SUBMIT_BTN = (By.XPATH, '//input[@class="btn btn-primary"]')
     GO_TO_SIGNUP_BTN = (By.XPATH, '//a[@class="btn btn-primary"]')
+
+    H1_CABINET = (By.XPATH, '//h1[text()="Особистий Кабінет"]')
 
 
 class CheckoutPageLocators:
@@ -108,7 +121,7 @@ class CheckoutPageLocators:
     PAY_ON_RECEIPT = (By.XPATH, '//input[@id="cod"]')
 
     CALL_TO_CONFIRM_CHECKBOX = (By.XPATH, '//input[@id="payment_address_iscall"]')
-    CONFIRM_BUTTON = (By.XPATH, "//a[@id='simplecheckout_button_confirm']")
+    CONFIRM_BUTTON = (By.XPATH, "//input[@id='button-confirm' and @class='btn btn-primary button']")
 
 
 class ForgotPasswordPageLocators:
@@ -116,6 +129,16 @@ class ForgotPasswordPageLocators:
     CONFIRM_FP_FIELD = (By.XPATH, '//input[@class="btn btn-primary"]')
     SUCCESS_ALERT = (By.XPATH, '//div[@class="alert alert-success alert-dismissible"]')
     DANGER_ALERT = (By.XPATH, '//div[@class="alert alert-danger alert-dismissible"]')
+
+
+class ProductPageLocators:
+    QUANTITY_FIELD = (By.XPATH, '//input[@id="input-quantity"]')
+    ADD_TO_CART = (By.XPATH, '//button[@id="button-cart"]')
+    COLOR_CHOOSE_MENU = (By.XPATH, '//select[@id="input-option438"]')
+    COLOR_OPTION = (By.XPATH, '//option[@value="1052"]')
+
+
+
 
 
 
