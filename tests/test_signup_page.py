@@ -32,7 +32,7 @@ class TestSignupPage:
         page.explicit_wait(5)
         page.input_signup_data(self.email_for_signup, self.password_for_signup, self.name_for_signup,
                                self.phone_for_signup, self.postcode_for_signup, self.address_for_signup)
-        page.explicit_wait(5)
+        page.explicit_wait(8)
         page.newsletter_decline()
         page.explicit_wait(2)
         page.confirm_signup()

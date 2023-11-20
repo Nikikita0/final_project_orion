@@ -58,6 +58,7 @@ class SignupPage(base_page.BasePage):
     def logout_cabinet(self):
         assert self.click_element(*locators.SignupPageLocators.GO_TO_MAIN_PAGE), \
             "The element is not present or intractable"
+        self.explicit_wait(7)
         assert self.click_element(*locators.BasePageLocators.CABINET_MENU), \
             "The element is not present or intractable"
         assert self.click_element(*locators.BasePageLocators.LOGOUT_BTN), \
